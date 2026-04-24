@@ -1,15 +1,33 @@
-Welcome to your new dbt project!
+Welcome to my first dbt project!
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
+### This project builds an end-to-end analytic pipeline on a e-commerce dataset using DuckDB, Dbt and PowerBI
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+It checks the dataset on kaggle;
+It contains 90k lines and 5 tables : orders - orders items - payments - products and customers
+
+###  Goals of this project 
+ - Load raw e-commerce data
+- Clean and transform data with dbt
+- Build analytics-ready data marts with DBT
+- See my transformations on Duck DB
+- Visualize key KPIs in Power BI
+
+## Tech Stack
+- DuckDB
+- dbt
+- SQL
+- Power BI
+
+## Project Structure
+- `models/staging/` : cleaned staging models
+- `models/intermediate/` : intermediate transformations
+- `models/marts/` : final data marts
+- `tests/` : data quality tests
+- `seeds/` : static files if needed
+
+## How to Run
+```bash
+dbt debug
+dbt run
+dbt test
