@@ -19,6 +19,8 @@ It contains 90k lines and 5 tables : orders - orders items - payments - products
 - SQL
 - Power BI
 
+To update my Azure skills, i use Azure  to create a Virtual Machine on which I installed PowerBI for visualition
+
 ## Project Structure
 - `models/staging/` : cleaned staging models
 - `models/intermediate/` : intermediate transformations
