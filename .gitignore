@@ -1,0 +1,7 @@
+target/
+dbt_packages/
+.venv/
+logs/
+*.duckdb
+*.zip
+*.csv
