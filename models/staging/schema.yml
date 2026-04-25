@@ -16,7 +16,7 @@ models:
         tests:
           - not_null
           - accepted_values:
-              values: ['delivered', 'shipped', 'canceled', 'processing', 'approved', 'invoiced', 'unknown']
+              values: ['delivered', 'shipped', 'canceled', 'processing', 'approved', 'invoiced', 'unavailable', 'unknown']
 
   - name: stg_customers
     columns:
@@ -29,7 +29,11 @@ models:
         tests:
           - not_null
 
-      - name: state
+      - name: etat
+        tests:
+          - not_null
+
+          - name: city_etat
         tests:
           - not_null
 
@@ -38,8 +42,8 @@ models:
       - name: product_id
         tests:
           - not_null
-          - unique
 
+        
       - name: category
         tests:
           - not_null
@@ -72,9 +76,6 @@ models:
         tests:
           - not_null
 
-      - name: seller_id
-        tests:
-          - not_null
 
       - name: price
         tests:

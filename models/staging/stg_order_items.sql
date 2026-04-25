@@ -7,7 +7,6 @@
   SELECT
       order_id,
       product_id,
-      seller_id,
       CAST(price             AS DECIMAL(10,2)) AS price,
       CAST(shipping_charges  AS DECIMAL(10,2)) AS shipping_charges,
       price + shipping_charges                 AS total_item_amount
