@@ -1,13 +1,11 @@
-with source as (
-select * from {{ source('raw', 'raw_payments') }}
+WITH source AS (
+    SELECT * FROM {{ source('raw', 'raw_payments') }}
 ),
-renamed as (
-    select
+renamed AS (
+    SELECT
         order_id,
-        payment_type,
-        CAST(payment_value AS DECIMAL(10,2)) AS payment
-    from source
+        payment_type AS typepaiement,
+        CAST(COALESCE(payment_value, 0) AS DECIMAL(10,2)) AS payment
+    FROM source
 )
-
-select * from renamed
-
+SELECT * FROM renamed

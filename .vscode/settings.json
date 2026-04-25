@@ -1,0 +1,11 @@
+{
+  "sqltools.useNodeRuntime": true,
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "DuckDB",
+      "database": "/Users/mac/formation-data/data/ecommerce.duckdb",
+      "name": "ecommerce_duckdb"
+    }
+  ]
+}
