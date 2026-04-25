@@ -1,4 +1,4 @@
-Welcome to my first dbt project!
+Welcome to my first dbt E-commerce project!
 
 ### This project builds an end-to-end analytic pipeline on a e-commerce dataset using DuckDB, Dbt and PowerBI
 
@@ -7,7 +7,7 @@ It checks the dataset on kaggle;
 It contains 90k lines and 5 tables : orders - orders items - payments - products and customers
 
 ###  Goals of this project 
- - Load raw e-commerce data
+- Load raw e-commerce data
 - Clean and transform data with dbt
 - Build analytics-ready data marts with DBT
 - See my transformations on Duck DB
