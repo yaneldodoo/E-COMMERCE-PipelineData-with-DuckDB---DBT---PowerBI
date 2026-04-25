@@ -1,0 +1,8 @@
+ecommerce_project:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/ecommerce.duckdb
+      schema: main
+      threads: 4
