@@ -33,3 +33,7 @@ To update my Azure skills, i use Azure  to create a Virtual Machine on which I i
 dbt debug
 dbt run
 dbt test
+
+My DuckDB dashboard after ETL:
+
+<img src="assets/myduckdbafterETL.png" alt="DuckDB dashboard" width="700"/>
