@@ -1,15 +1,11 @@
 version: 2
 
-
 sources:
-  - name: raw  # Source system name
-    database: ecommerce     # Optional: database where source is stored
-    schema: main  # Schema containing the source tables
+  - name: raw # Source system name
+    schema: main # Schema containing the source tables
     tables:
-      - name: raw_orders   # Table name as it exists in the database
+      - name: raw_orders # Table name as it exists in the database
       - name: raw_customers
       - name: raw_order_items
       - name: raw_payments
       - name: raw_products
-
-
