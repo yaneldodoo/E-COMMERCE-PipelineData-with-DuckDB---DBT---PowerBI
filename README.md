@@ -1,10 +1,12 @@
-Welcome to my first dbt E-commerce project!
+### Welcome !
 
-### This project builds an end-to-end analytic pipeline on a e-commerce dataset using DuckDB, Dbt and PowerBI
+This project is based on a real e-commerce dataset structured around a typical online store business model.
 
+It includes key tables such as orders, order items, payments, customers, and products to simulate a real transactional system.
 
-It checks the dataset on kaggle;
-It contains 90k lines and 5 tables : orders - orders items - payments - products and customers
+The goal of this project is to build a complete Analytics Engineering pipeline to transform raw transactional data into structured and meaningful business insights.
+
+Using dbt for data modeling, DuckDB for storage, dbt for transformations and Power BI for visualization, the project focuses on understanding customer behavior, sales performance, and product trends.
 
 ###  Goals of this project 
 - Load raw e-commerce data
